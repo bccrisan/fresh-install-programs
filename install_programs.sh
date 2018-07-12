@@ -51,6 +51,22 @@ rm processing-3.3.7-linux64.tgz
 echo "Done Installing Processing"
 
 
+#Installing communication tools & internet access tools.
+
+#Skype
+wget https://go.skype.com/skypeforlinux-64.deb
+sudo dpkg -i skypeforlinux-64.deb
+sudo apt-get install -f
+rm skypeforlinux-64.deb
+echo "Done Installing Skype"
+
+# Google Chrome
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo dpkg -i google-chrome-stable_current_amd64.deb
+sudo apt-get install -f
+rm google-chrome-stable_current_amd64.deb
+echo "Done installing Google Chrome"
+
 #Installing media tools 
 sudo apt-get install gimp kdenlive vlc mpv moc-y #or mocp
 
