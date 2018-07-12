@@ -1,5 +1,8 @@
 #!/bin/bash
+
+#Update & Upgrade system before doing something else
 sudo apt-get update
+sudo apt-get upgrade -y
 
 #Installing monitoring tools and file managers.
 echo "Installing monitoring tools and file managers."
