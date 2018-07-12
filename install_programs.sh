@@ -44,6 +44,16 @@ echo "Done"
 #Installing IDE's.
 sudo snap install pycharm-community --classic
 
+#Installing Processing IDE
+wget http://download.processing.org/processing-3.3.7-linux64.tgz
+tar -xvzf processing-3.3.7-linux64.tgz
+rm processing-3.3.7-linux64.tgz
+echo "Done Installing Processing"
+
+
+#Installing media tools 
+sudo apt-get install gimp kdenlive vlc mpv moc-y #or mocp
+
 #install JetBrains ToolBox
 echo "Installing JetBrains Toolbox"
 mkdir DownloadedTemp
