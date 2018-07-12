@@ -34,7 +34,7 @@ cd "DownloadedTemp"
 wget https://az764295.vo.msecnd.net/stable/0f080e5267e829de46638128001aeb7ca2d6d50e/code_1.25.0-1530796411_amd64.deb
 
 sudo dpkg -i code*
-sudo apt-get install -f
+sudo apt-get install -f -y
 cd ..
 rm -rf DownloadedTemp
 echo "Done"
@@ -44,30 +44,30 @@ echo "Done"
 #Skype
 wget https://go.skype.com/skypeforlinux-64.deb
 sudo dpkg -i skypeforlinux-64.deb
-sudo apt-get install -f
+sudo apt-get install -f -y
 rm skypeforlinux-64.deb
 echo "Done Installing Skype"
 
 # Google Chrome
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg -i google-chrome-stable_current_amd64.deb
-sudo apt-get install -f
+sudo apt-get install -f -y
 rm google-chrome-stable_current_amd64.deb
 echo "Done installing Google Chrome"
 
 #Putty
 sudo apt-get install putty -y
-sudo apt-get install -f
+sudo apt-get install -f -y
 echo "Done installing Putty"
 
 
 #Installing media tools 
-sudo apt-get install gimp kdenlive vlc ffmpeg mpv moc-y #or mocp
+sudo apt-get install gimp kdenlive vlc ffmpeg mpv moc -y #or mocp
 
 #OBS
-sudo add-apt-repository ppa:obsproject/obs-studio
+sudo add-apt-repository ppa:obsproject/obs-studio -y
 sudo apt-get update
-sudo apt-get install obs-studio
+sudo apt-get install obs-studio -y
 
 
 #Installing IDE's.
@@ -84,7 +84,7 @@ sudo apt-get install codeblocs -y
 echo "Installed codeblocks"
 
 
-#install JetBrains ToolBox
+#Installing JetBrains ToolBox
 echo "Installing JetBrains Toolbox"
 mkdir DownloadedTemp
 echo "Made temporary download directory .."
