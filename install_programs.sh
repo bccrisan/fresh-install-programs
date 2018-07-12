@@ -39,18 +39,6 @@ cd ..
 rm -rf DownloadedTemp
 echo "Done"
 
-
-
-#Installing IDE's.
-sudo snap install pycharm-community --classic
-
-#Installing Processing IDE
-wget http://download.processing.org/processing-3.3.7-linux64.tgz
-tar -xvzf processing-3.3.7-linux64.tgz
-rm processing-3.3.7-linux64.tgz
-echo "Done Installing Processing"
-
-
 #Installing communication tools & internet access tools.
 
 #Skype
@@ -74,7 +62,27 @@ echo "Done installing Putty"
 
 
 #Installing media tools 
-sudo apt-get install gimp kdenlive vlc mpv moc-y #or mocp
+sudo apt-get install gimp kdenlive vlc ffmpeg mpv moc-y #or mocp
+
+#OBS
+sudo add-apt-repository ppa:obsproject/obs-studio
+sudo apt-get update
+sudo apt-get install obs-studio
+
+
+#Installing IDE's.
+sudo snap install pycharm-community --classic
+
+#Installing Processing IDE
+wget http://download.processing.org/processing-3.3.7-linux64.tgz
+tar -xvzf processing-3.3.7-linux64.tgz
+rm processing-3.3.7-linux64.tgz
+echo "Done Installing Processing"
+
+#Installing Codeblocks
+sudo apt-get install codeblocs -y
+echo "Installed codeblocks"
+
 
 #install JetBrains ToolBox
 echo "Installing JetBrains Toolbox"
