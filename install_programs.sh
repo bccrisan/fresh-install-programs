@@ -18,7 +18,7 @@ sudo apt-get install kicad arduino -y
 
 #Install Fritzing
 wget fritzing.org/download/0.9.3b/linux-64bit/fritzing-0.9.3b.linux.AMD64.tar.bz2
-tar -vvjf fritzing-0.9.3b.linux.AMD64.tar.bz2
+tar -xvjf fritzing-0.9.3b.linux.AMD64.tar.bz2
 
 rm fritzing-0.9.3b.linux.AMD64.tar.bz2
 echo "Done installing Fritzing."
