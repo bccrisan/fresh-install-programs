@@ -67,6 +67,12 @@ sudo apt-get install -f
 rm google-chrome-stable_current_amd64.deb
 echo "Done installing Google Chrome"
 
+#Putty
+sudo apt-get install putty -y
+sudo apt-get install -f
+echo "Done installing Putty"
+
+
 #Installing media tools 
 sudo apt-get install gimp kdenlive vlc mpv moc-y #or mocp
 
