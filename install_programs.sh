@@ -1,7 +1,20 @@
 #!/bin/bash
 #sudo apt-get update
-#sudo apt-get install htop mc net-tools kio-extras krusader virtualbox -y
-#sudo snap install pycharm-community --classic
+
+#Installing monitoring tools and file managers.
+echo "Installing monitoring tools and file managers."
+sudo apt-get install htop mc net-tools kio-extras krusader -y
+
+
+#Installing virtualisation tools.
+sudo apt-get install virtualbox -y
+
+#Installing text editors
+sudo apt-get install pluma -y
+
+
+#Installing IDE's.
+sudo snap install pycharm-community --classic
 
 #install JetBrains ToolBox
 echo "Installing JetBrains Toolbox"
@@ -23,9 +36,10 @@ echo "Attention! This script will not continue to run until Tollbox is closed"
 ./jetbrains-toolbox
 
 cd
-sleep 30s	#waits for 30 seconds
+echo "Wait 5 seconds sir!"
+sleep 5s
 rm -rf "DownloadedTemp"
 echo "Removed instalation files"
 
-echo "End of program"
+echo "Instalation finished."
 
