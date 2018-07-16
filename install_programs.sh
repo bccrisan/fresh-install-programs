@@ -29,18 +29,7 @@ echo "Done installing Fritzing."
 sudo apt-get install pluma -y
 
 #Installing visual studio code
-echo "Installing Vistual Studio Code"
-mkdir DownloadedTemp
-echo "Made temporary download directory .."
-cd "DownloadedTemp"
-
-wget https://az764295.vo.msecnd.net/stable/0f080e5267e829de46638128001aeb7ca2d6d50e/code_1.25.0-1530796411_amd64.deb
-
-sudo dpkg -i code*
-sudo apt-get install -f -y
-cd ..
-rm -rf DownloadedTemp
-echo "Done"
+sudo snap install vscode --classic
 
 #Installing communication tools & internet access tools.
 
