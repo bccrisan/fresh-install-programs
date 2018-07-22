@@ -9,6 +9,22 @@ echo "Installing monitoring tools and file managers."
 sudo apt-get install htop mc net-tools kio-extras krusader -y
 
 
+#Install version controll tools
+sudo apt-get install git, mercurial -y
+
+
+#Install other tools
+sudo apt-get install screen -y
+
+
+#Install python packages
+sudo apt-get install python-pip -y
+
+
+#Install slurm
+sudo apt-get install slurm -y
+
+
 #Installing virtualisation tools.
 sudo apt-get install virtualbox -y
 
@@ -98,7 +114,7 @@ echo "Attention! This script will not continue to run until Tollbox is closed"
 cd ..
 echo "Wait 5 seconds sir!"
 sleep 5s
-rm -rf "DownloadedTemp"
+rm -rf DownloadedTemp
 echo "Removed instalation files"
 
 
